@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>SanBit - Produccion Multimedia</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="Santigo Carvajal Moscoso">
+    
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/barrasDeProgreso.css">
+    <link rel="stylesheet" type="text/css" href="font/fuentes.css">
+
+
+    <script src="https://kit.fontawesome.com/3f63022646.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/animateprogress.js"></script>
+</head>
+<body class="left-menu">
+	<div class="menu-wrapper">
+        <div class="mobile-menu">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark menu-phone" style="background: rgba(0, 0, 0, 1) url(img/menubg.png); text-transform: capitalize; padding: 15px 20px; border-bottom: 1px dotted rgba(255, 255, 255, 0.15); font-size: 18px; line-height: 1 !important; margin: 0 !important; text-transform: capitalize; white-space: nowrap; font-family:gravity-italic;">
+  				<div class="container-fluid">
+   					 <a class="navbar-brand" href="#"><img src="img/logo-mobile.png" alt=""></a>
+   					 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+     				 <span class="navbar-toggler-icon"></span>
+    				</button>
+    				<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+						<ul class="navbar-nav" >
+        					<li class="nav-item" style="border-top: 1px dotted rgba(255, 255, 255, 0.15);">
+          						<a class="nav-link" href="#">Inicio</a>
+        					</li>
+        					<li class="nav-item" style="border-top: 1px dotted rgba(255, 255, 255, 0.15);">
+          						<a class="nav-link" href="#sobre-mi">Sobre Mí</a>
+        					</li>
+        					<li class="nav-item" style="border-top: 1px dotted rgba(255, 255, 255, 0.15);">
+          						<a class="nav-link" href="#portafolio">Portafolio</a>
+        					</li>
+        					<li class="nav-item" style="border-top: 1px dotted rgba(255, 255, 255, 0.15);">
+          						<a class="nav-link" href="#">Servicios</a>
+        					</li>
+        					<li class="nav-item" style="border-top: 1px dotted rgba(255, 255, 255, 0.15); border-bottom: 1px dotted rgba(255, 255, 255, 0.15);">
+          						<a class="nav-link" href="#">Conectate</a>
+        					</li>
+      					</ul>
+      					<div class="container">
+                        <div class="row" style="padding: 15px 20px;">
+                            <div class="offset-sm-2 col-sm-2" style=" list-style: none;">
+                                <li><a href="#"><i class="fa fa-instagram" style="font-size: 25px; color: #fff;"></i></a></li>
+                            </div>
+                            <div class="col-sm-2" style=" list-style: none;">
+                                <li><a href="#"><i class="fa fa-facebook" style="font-size: 25px; color: #fff;"></i></a></li>
+                            </div>
+                            <div class="col-sm-2" style=" list-style: none;">
+                                <li><a href="#"><i class="fa fa-linkedin" style="font-size: 25px; color: #fff;"></i></a></li> 
+                            </div>
+                            <div class="col-sm-2" style=" list-style: none;">
+                                 <li><a href="#"><i class="fab fa-behance" style="font-size: 25px; color: #fff;"></i></a></li>
+                            </div>
+                        </div>
+                    </div><!-- end menu -->
+    				</div>
+  				</div>
+			</nav>
+
+        </div><!-- end mobile-menu -->
+
+        <header class="vertical-header">
+            <div class="vertical-header-wrapper" style=" background: rgba(0, 0, 0, 1) url(img/menubg.png) no-repeat scroll center center;">
+                <nav class="nav-menu">
+                    <div class="logo">
+                        <a href="index.html"><img src="img/logo.png" alt=""></a>
+                    </div><!-- end logo -->
+                    <ul class="primary-menu" >
+                        <li class="child-menu"><a href="#">Inicio</a>
+                        </li>
+                        <li class="child-menu"><a href="#sobre-mi">Sobre Mí</a>
+                        </li>
+                        <li class="child-menu"><a href="#portafolio">Portafolio</a>
+                        </li>
+                        <li class="child-menu"><a href="#">Servicios</a>
+                        </li>
+                        <li class="child-menu">
+                        	<button type="button"data-bs-toggle="modal" data-bs-target="#exampleModal">Conectate</button>
+                        	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							  <div class="modal-dialog">
+							    <div class="modal-content">
+							      <div class="modal-header">
+							        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+							        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							      </div>
+							      <div class="modal-body">
+							        I will not close if you click outside me. Don't even try to press escape key.
+							      </div>
+							      <div class="modal-footer">
+							        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+							        <button type="button" class="btn btn-primary">Save changes</button>
+							      </div>
+							    </div>
+							  </div>
+							</div>
+                        </li>
+                    </ul>
+                    <div class="margin-block"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="offset-sm-2 col-sm-2">
+                                <li><a href="#"><i class="fa fa-instagram" style="font-size: 25px;"></i></a></li>
+                            </div>
+                            <div class="col-sm-2">
+                                <li><a href="#"><i class="fa fa-facebook" style="font-size: 25px;"></i></a></li>
+                            </div>
+                            <div class="col-sm-2">
+                                <li><a href="#"><i class="fa fa-linkedin" style="font-size: 25px;"></i></a></li> 
+                            </div>
+                            <div class="col-sm-2">
+                                 <li><a href="#"><i class="fab fa-behance" style="font-size: 25px;"></i></a></li>
+                            </div>
+                        </div>
+                    </div><!-- end menu -->
+                </nav><!-- end nav-menu -->
+            </div><!-- end vertical-header-wrapper -->
+        </header><!-- end header -->
+    </div><!-- end menu-wrapper -->
+<div id="wrapper">
+	<div class="container-fluid">
+		<div class="row">
+			<div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
+            	<div class="carousel-inner">
+                	<div class="carousel-item active">
+                	<img src="img/parque.jpg" class="d-block w-100" alt="...">
+                	</div>
+                	<div class="carousel-item">
+                	<img src="img/parque.jpg" class="d-block w-100" alt="...">
+                	</div>
+                	<div class="carousel-item">
+                	<img src="img/parque.jpg" class="d-block w-100" alt="...">
+                	</div>
+            	</div>
+            	<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+               		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                	<span class="visually-hidden"></span>
+            	</a>
+            	<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+               		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+                	<span class="visually-hidden"></span>
+            	</a>
+        	</div>
+		</div>
+	</div>
+	<div class="section color1 noover">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </div><!-- end section -->
+
+        <section class="section lb nopadtop noover">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="service-box m30">
+                            <img src="img/diseño.png"  id="panel1" alt="...">
+                            <h3>Diseños Excepcionales</h3>
+                            <p>Innvacion de diseños con altos estaranres de creatividad</p>
+                        </div>
+                    </div><!-- end col -->
+
+                    <div class="col-lg-4 col-md-12">
+                        <div class="service-box m30">
+                            <img src="img/multimedia y transmedia.png"  id="panel1" alt="...">
+                            <h3>Multimedia y Transmedia</h3>
+                            <p>Planteamiento de destresas con enfasis en multimedia reconociendo distintos medios</p>
+                        </div>
+                    </div><!-- end col -->
+
+                    <div class="col-lg-4 col-md-12">
+                        <div class="service-box m30">
+                            <img src="img/trabajo en equipo.png"  id="panel1" alt="...">
+                            <h3>Trabajo en Equipo</h3>
+                            <p>Cumplimiento de proyectos relacionados a las caracteristicas del empleador</p>
+                        </div>
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section><!-- end section -->
+
+        <section class="section">
+            <div id="sobre-mi" class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-md-12">
+                        <div class="text-widget">
+                            <h2 id="adout-us">Sobre Mí</h2>
+
+                            <p>Mi nombre es Santiago Carvajal; persona compromietida, reponsable y dispuesto a crear relacion con el entorno y diferentes puntos de vista; teniendo la actitud para realizar distintos proyectos deacuerdo a mi capacidades y habilidades en <a href="#">produccion multimedia</a></p>
+                            <div class="clearfix"></div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 first">
+                                    <ul class="check">
+                                        <h4>Fortalezas:</h4>
+                                        <li> Desarrollo Web (front-end), Audiovisual y Fotografia</li>
+                                    </ul><!-- end check -->
+                                </div><!-- end col-lg-4 -->
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                    <ul class="check">
+                                        <h4>Habilidades blandas:</h4>
+                                        <li>Responsabilidad, Paciencia, Adaptabilidad, Cominucacion Asertiva, Productividad, Manejo de Tiempo.</li>
+                                    </ul><!-- end check -->    
+                                </div><!-- end col-lg-4 -->
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 last">
+                                    <ul class="check">
+                                        <h4>Principios:</h4>
+                                        <li>Satisfacción; Compromiso, Fiabilidad, Creatividad, Honestidad, Profesionalismo y Trabajo en equipo</li>
+                                    </ul><!-- end check -->
+                                </div><!-- end col-lg-4 --> 
+                            </div><!-- end row -->      
+                        </div><!-- end widget -->
+                    </div><!-- end col-lg-6 -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+            <div class="perspective-image hidden-sm hidden-xs hidden-md"> 
+                <img src="img/Santiago Carvajal Moscoso.jpg" alt="" class="img-responsive">
+            </div>
+        </section>
+
+        <section class="section lb">
+            <div id="portafolio" class="container">
+                <div class="section-title text-center">
+                    <h2 id="adout-us">Portafolio</h2>
+                    <p>Muestra de trabajos creados recientemente en: Desarrollo web (front-end), fotografia, audiovisual, ilustracion, publicidad y muchos mas proyectos realizados.</p>
+                </div><!-- end title -->
+
+                <div class="case-top clearfix">
+                    <div class="pull-left hidden-xs">
+                        <p>Showing 1–12 of 24 results</p>
+                    </div><!-- end col -->
+
+                    <div class="pull-right">
+                        <div class="dropdown portfolio-filter">
+                            <button class="btn btn-custom dropdown-toggle" type="button" data-toggle="dropdown">Product Filter
+                            <span class="fa fa-angle-down"></span></button>
+                            <ul class="dropdown-menu">
+                                <li><a class="active" href="#" data-filter="*">All Projects</a></li>
+                                <li><a class="" href="#" data-filter=".cat1">Web Design</a></li>
+                                <li><a class="" href="#" data-filter=".cat2">Motion Design</a></li>
+                                <li><a class="" href="#" data-filter=".cat3">Graphic Design</a></li>
+                                <li><a class="" href="#" data-filter=".cat4">Development</a></li>
+                            </ul>
+                        </div><!-- end dropdown -->
+                    </div><!-- end col -->
+                </div><!-- end row -->
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="portfolio row with-desc">
+                            <div class="post-media pitem item-w1 item-h1 cat1">
+                                <div class="entry">
+                                    <img src="img/upload/desc_work_01.png" alt="" class="img-responsive">
+                                    <div class="magnifier">
+                                        <a class="golink" href="#">
+                                           <i class="fa fa-link"></i>
+                                        </a>
+                                    </div><!-- end magnifier -->
+                                </div><!-- end entry -->
+                                <div class="item-desc">
+                                    <h4><a href="#">Plumeria Logo Design</a></h4>
+                                    <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed sed. </p>
+                                </div>
+                            </div><!-- end post-media -->
+
+                            <div class="post-media pitem item-w1 item-h1 cat2">
+                                <div class="entry">
+                                    <img src="img/upload/desc_work_02.png" alt="" class="img-responsive">
+                                    <div class="magnifier">
+                                        <a class="golink" href="#">
+                                           <i class="fa fa-link"></i>
+                                        </a>
+                                    </div><!-- end magnifier -->
+                                </div><!-- end entry -->
+                                <div class="item-desc">
+                                    <h4><a href="#">Back to Life</a></h4>
+                                    <p>Aliquam erat volutpat. Donec pharetra imperdiet metus, eget cras.</p>
+                                </div>
+                            </div><!-- end post-media -->
+
+                            <div class="post-media pitem item-w1 item-h1 cat3">
+                                <div class="entry">
+                                    <img src="img/upload/desc_work_03.png" alt="" class="img-responsive">
+                                    <div class="magnifier">
+                                        <a class="golink" href="#">
+                                           <i class="fa fa-link"></i>
+                                        </a>
+                                    </div><!-- end magnifier -->
+                                </div><!-- end entry -->
+                                <div class="item-desc">
+                                    <h4><a href="#">Creative Share App</a></h4>
+                                    <p>Aenean consectetur semper lorem, sit amet volutpat. </p>
+                                </div>
+                            </div><!-- end post-media -->
+
+                            <div class="post-media pitem item-w1 item-h1 cat4">
+                                <div class="entry">
+                                    <img src="img/upload/desc_work_04.png" alt="" class="img-responsive">
+                                    <div class="magnifier">
+                                        <a class="golink" href="#">
+                                           <i class="fa fa-link"></i>
+                                        </a>
+                                    </div><!-- end magnifier -->
+                                </div><!-- end entry -->
+                                <div class="item-desc">
+                                    <h4><a href="#">Luana 3D Max</a></h4>
+                                    <p>Nunc vitae metus sagittis, pharetra risus non, luctus ligula volutpat. </p>
+                                </div>
+                            </div><!-- end post-media -->
+
+                            <div class="post-media pitem item-w1 item-h1 cat1">
+                                <div class="entry">
+                                    <img src="img/upload/desc_work_05.png" alt="" class="img-responsive">
+                                    <div class="magnifier">
+                                        <a class="golink" href="#">
+                                           <i class="fa fa-link"></i>
+                                        </a>
+                                    </div><!-- end magnifier -->
+                                </div><!-- end entry -->
+                                <div class="item-desc">
+                                    <h4><a href="#">Custom M Logo</a></h4>
+                                    <p>Proin non mollis orci, quis maximus nisi. In imperdiet neque eu metus. </p>
+                                </div>
+                            </div><!-- end post-media -->
+
+                            <div class="post-media pitem item-w1 item-h1 cat2">
+                                <div class="entry">
+                                    <img src="img/upload/desc_work_06.png" alt="" class="img-responsive">
+                                    <div class="magnifier">
+                                        <a class="golink" href="#">
+                                           <i class="fa fa-link"></i>
+                                        </a>
+                                    </div><!-- end magnifier -->
+                                </div><!-- end entry -->
+                                <div class="item-desc">
+                                    <h4><a href="#">Internal App Project</a></h4>
+                                    <p>Etiam fermentum, urna sed varius aliquet, sem enim ultrices arcu amet. </p>
+                                </div>
+                            </div><!-- end post-media -->
+
+                            <div class="post-media pitem item-w1 item-h1 cat3">
+                                <div class="entry">
+                                    <img src="img/upload/desc_work_07.png" alt="" class="img-responsive">
+                                    <div class="magnifier">
+                                        <a class="golink" href="#">
+                                           <i class="fa fa-link"></i>
+                                        </a>
+                                    </div><!-- end magnifier -->
+                                </div><!-- end entry -->
+                                <div class="item-desc">
+                                    <h4><a href="#">Audio Player App</a></h4>
+                                    <p>Ut convallis mollis est, eu tincidunt magna varius dignissim. Sed sed.</p>
+                                </div>
+                            </div><!-- end post-media -->
+
+                            <div class="post-media pitem item-w1 item-h1 cat4">
+                                <div class="entry">
+                                    <img src="img/upload/desc_work_08.png" alt="" class="img-responsive">
+                                    <div class="magnifier">
+                                        <a class="golink" href="#">
+                                           <i class="fa fa-link"></i>
+                                        </a>
+                                    </div><!-- end magnifier -->
+                                </div><!-- end entry -->
+                                <div class="item-desc">
+                                    <h4><a href="#">Geek Vector Design</a></h4>
+                                    <p>Ut porttitor aliquet auctor. Donec pellentesque libero et mattis amet. </p>
+                                </div>
+                            </div><!-- end post-media -->
+
+                            <div class="post-media pitem item-w1 item-h1 cat1">
+                                <div class="entry">
+                                    <img src="img/upload/desc_work_09.png" alt="" class="img-responsive">
+                                    <div class="magnifier">
+                                        <a class="golink" href="#">
+                                           <i class="fa fa-link"></i>
+                                        </a>
+                                    </div><!-- end magnifier -->
+                                </div><!-- end entry -->
+                                <div class="item-desc">
+                                    <h4><a href="#">Sweet Admin Dashboard</a></h4>
+                                    <p>Aliquam quis euismod metus, vitae iaculis ipsum. Aliquam non enim sed.</p>
+                                </div>
+                            </div><!-- end post-media -->
+
+                            <div class="post-media pitem item-w1 item-h1 cat1">
+                                <div class="entry">
+                                    <img src="img/upload/desc_work_10.png" alt="" class="img-responsive">
+                                    <div class="magnifier">
+                                        <a class="golink" href="#">
+                                           <i class="fa fa-link"></i>
+                                        </a>
+                                    </div><!-- end magnifier -->
+                                </div><!-- end entry -->
+                                <div class="item-desc">
+                                    <h4><a href="#">Smooth Keyboard Design</a></h4>
+                                    <p>Nunc aliquet mi ante. Nulla magna ante, porttitor in sagittis posuere. </p>
+                                </div>
+                            </div><!-- end post-media -->
+
+                            <div class="post-media pitem item-w1 item-h1 cat2">
+                                <div class="entry">
+                                    <img src="img/upload/desc_work_11.png" alt="" class="img-responsive">
+                                    <div class="magnifier">
+                                        <a class="golink" href="#">
+                                           <i class="fa fa-link"></i>
+                                        </a>
+                                    </div><!-- end magnifier -->
+                                </div><!-- end entry -->
+                                <div class="item-desc">
+                                    <h4><a href="#">Click Smart App</a></h4>
+                                    <p>Vivamus mattis sit amet ipsum vitae pretium. Proin vitae nulla nullam. </p>
+                                </div>
+                            </div><!-- end post-media -->
+
+                            <div class="post-media pitem item-w1 item-h1 cat3">
+                                <div class="entry">
+                                    <img src="img/upload/desc_work_12.png" alt="" class="img-responsive">
+                                    <div class="magnifier">
+                                        <a class="golink" href="#">
+                                           <i class="fa fa-link"></i>
+                                        </a>
+                                    </div><!-- end magnifier -->
+                                </div><!-- end entry -->
+                                <div class="item-desc">
+                                    <h4><a href="#">Gabfire Vector Logo</a></h4>
+                                    <p>Maecenas nisl magna, ultricies lobortis tortor vel, dapibus cras amet. </p>
+                                </div>
+                            </div><!-- end post-media -->
+                        </div><!-- end row -->
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section><!-- end section -->
+
+        <div class="section color2 noover">
+            <div class="container-fluid">
+            </div><!-- end container -->
+        </div><!-- end section -->
+
+	<div class="container center">
+		<div class="row barras1">
+			<h2 id="adout-us">Habilidades</h2>
+		 	<div class="col">
+		 		<div class="text-barras">
+		 			<p>Diseño Grafico</p>
+		 		</div>
+			 	<div class="progress">
+					<progress id="diseño" max="100" value="91"></progress>
+					<span></span>
+				</div>
+				<div class="text-barras">
+		 			<p>Audiovisual</p>
+		 		</div>
+		 		<br></br>
+			    <div class="progress">
+					<progress id="audiovisual" max="100" value="72"></progress>
+					<span></span>
+				</div>
+				<div class="text-barras">
+		 			<p>Ilustración</p>
+		 		</div>
+		 		<br></br>
+				<div class="progress">
+					<progress id="ilustracion" max="100" value="86"></progress>
+					<span></span>
+				</div>
+		 	</div>
+		 	<div class="col">
+		 		<div class="text-barras">
+		 			<p>Desarrollo web (front-end)</p>
+		 		</div>
+			 	<div class="progress">
+					<progress id="desarrolloweb" max="100" value="52"></progress>
+					<span></span>
+				</div>
+				<div class="text-barras">
+		 			<p>Branding</p>
+		 		</div>
+		 		<br></br>
+				<div class="progress">
+					<progress id="branding" max="100" value="79"></progress>
+					<span></span>
+				</div>
+				<div class="text-barras">
+		 			<p>Node.js</p>
+		 		</div>
+		 		<br></br>
+				<div class="progress">
+					<progress id="nodejs" max="100" value="36"></progress>
+					<span></span>
+				</div>
+		 	</div>
+		</div>
+	</div>
+
+	<script type="text/javascript"> 
+
+		window.onload = function() { 
+			
+			animateprogress("#diseño",91);
+			animateprogress("#audiovisual",72);
+			animateprogress("#ilustracion",86);
+			animateprogress("#desarrolloweb",52);
+			animateprogress("#branding",79);
+			animateprogress("#nodejs",36);
+			
+		} 	
+		document.querySelector ("#boton").addEventListener ("click", function() { 
+			animateprogress("#diseño",91);
+            animateprogress("#audiovisual",72);
+            animateprogress("#ilustracion",86);
+			animateprogress("#desarrolloweb",52);
+			animateprogress("#branding",79);
+			animateprogress("#nodejs",36);
+	   
+		});
+</script>
+   
+        <section class="section parallax" data-stellar-background-ratio="0.6" style="background-image:url('img/upload/parallax_01.jpg');">
+            <div class="container">
+                <div class="section-title light-color text-center">
+                    <h2 id="adout-us">Proceso Creativo</h2>
+                    <p>Los elementos creativos requieren un procesos y se consecusion de paso a paso.</p>
+                </div><!-- end title -->
+                
+                <div class="row">
+                    <div class=" col-lg-12 d-flex justify-content-evenly procesocreativo" style="text-align: center; padding: 0 20px 30px 20px; ">
+                        <button type="button" class="btn btn-outline-primary btn-lg">Web (front-end)</button>
+                        <button type="button" class="btn btn-outline-primary btn-lg">Ilustracion</button>
+                        <button type="button" class="btn btn-outline-primary btn-lg">Branding</button>
+                        <button type="button" class="btn btn-outline-primary btn-lg">Animación</button>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p>El Desarrollo de una pagina que estar en la web, conlleva un proceso de creacion desde los contenidos mas basicos que contendra, el diseño, la informacion y por ultimo toda la Programacion con la que se crearan interaciones con los usuarios</p>
+                            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                      <img src="img/upload/blog_03.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img src="img/upload/blog_03.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img src="img/upload/blog_03.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section>
+
+        <section class="section lb">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h2 id="adout-us" >Servicios</h2>
+                </div><!-- end title -->
+
+                <div class="row text-center">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="blog-box">
+                            <div class="post-media">
+                                <a href="#"><img src="img/Logo-audiovisual.png" alt="" class="img-responsive"></a>
+                            </div><!-- end media -->
+
+                            <div class="blog-desc">
+                                <h4><a href="#">SanBit - Audiovisual</a></h4>
+                                <p>Creación de imagen, audio y audiovisual con énfasis en los procesos creativos desde la pre-producción, producción y pos-producción de piezas</p>
+                            </div><!-- end blog-desc -->
+                        </div><!-- end blog -->
+                    </div><!-- end col -->
+
+                    <div class="col-lg-4 col-md-12">
+                        <div class="blog-box">
+                            <div class="post-media">
+                                <a href="#"><img src="img/Logo-general.png" alt="" class="img-responsive"></a>
+                            </div><!-- end media -->
+                            <div class="blog-desc">
+                                <h4><a href="#">Sanbit - Multimedia</a></h4>
+                                <p>Produccion y desarrollo de proyectos de acuerdo a su necesidad multimedial con las especificaciones que requiera para su entera satisfaccion </p>
+                            </div><!-- end blog-desc -->
+                        </div><!-- end blog -->
+                    </div><!-- end col -->
+
+                    <div class="col-lg-4 col-md-12">
+                        <div class="blog-box">
+                            <div class="post-media">
+                                <a href="#"><img src="img/logo-web.png" alt="" class="img-responsive"></a>
+                            </div><!-- end media -->
+
+                            <div class="blog-desc">
+                                <h4><a href="#">SanBit - Desarrollador Web</a></h4>
+                                <p>Desarrollo, programación y creación de paginas web (front-end) con las diferentes funciones como: edicción de paginas y creacion desde cero.</p>
+                            </div><!-- end blog-desc -->
+                        </div><!-- end blog -->
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </div>
+        </section>    
+
+            <div class="container footer color3">
+					<div class="col-lg-12 footer-copy">
+						Todos Los Derechos Reservador 2021 SanBit | Diseñador: <a href="#">Santiago Carvajal Moscoso</a>	
+					</div>
+			</div>
+
+</div><!-- end wrapper -->
+
+    <script src="js/carousel.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/rotate.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/masonry.js"></script>
+    <script src="js/masonry-4-col.js"></script>
+
+</body>
+</html>
